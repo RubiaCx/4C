@@ -6,7 +6,8 @@
 </template>
 
 <style lang="less">
-@import "./fonts/font.css";
+
+@import "../static/css/font.css";
 body{
   font-family: SiYuanSans;
 }

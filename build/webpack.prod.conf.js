@@ -17,8 +17,8 @@ const webpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,
-      extract: true,
-      usePostCSS: true
+      extract: false, // true, // icon不显示， run dev 不成功
+      usePostCSS: true,
     })
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
@@ -67,7 +67,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       minify: {
         removeComments: true,
         collapseWhitespace: true,
-        removeAttributeQuotes: true
+        removeAttributeQuotes: false, // true // 部署
         // more options:
         // https://github.com/kangax/html-minifier#options-quick-reference
       },

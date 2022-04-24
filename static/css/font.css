@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SiYuanSerif';
+    src: url('./fonts/SourceHanSerifCN-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SiYuanSans';
+    src: url('./fonts/SourceHanSansCN-Normal.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
