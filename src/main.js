@@ -24,6 +24,7 @@ Vue.prototype.$http = axios
 // Vue.prototype.$echarts = echarts
 import * as echarts from 'echarts'
 Vue.prototype.$echarts = echarts;
+
 import qs from 'qs';
 Vue.prototype.qs = qs;
 

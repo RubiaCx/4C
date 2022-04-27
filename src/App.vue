@@ -9,7 +9,7 @@
 
 @import "../static/css/font.css";
 body{
-  font-family: SiYuanSans;
+  font-family: Alibaba;
 }
 </style>
 

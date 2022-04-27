@@ -17,7 +17,8 @@
     "v-charts": "^1.19.0",
     "vue": "^2.5.2",
     "vue-echarts": "^6.0.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-wordcloud": "^1.1.1"
   },
   "devDependencies": {
     "@vue/composition-api": "^1.4.9",

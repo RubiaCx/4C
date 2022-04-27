@@ -4,8 +4,8 @@
 </template>
 
 <script>
+import theme from '../../../static/theme/t2.js';
 let Echarts = require("echarts/lib/echarts"); //基础实例 注意不要使用import
-require("echarts/lib/chart/bar"); //按需引入 bar = 柱状图
 
 export default {
   data() {
@@ -20,7 +20,7 @@ export default {
   methods: {
     init() {
       //2.初始化
-      this.chart = Echarts.init(this.$refs.chart);
+      this.chart = Echarts.init(this.$refs.chart,theme);
       //3.配置数据
       let option = {
         legend: {

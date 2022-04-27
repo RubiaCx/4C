@@ -9,7 +9,7 @@ export default new Router({
     {
       path: "/",
       // name: "Home",
-      redirect: "/Home/Overall",
+      redirect: "/Info/Web",
       base: "/vue/",
       // component: () => import("@/components/page/Home"),
       // meta: {
@@ -17,20 +17,40 @@ export default new Router({
       // }
     },
     {
-      path: "/Home",
-      name: "Home",
+      path: "/Info",
       component: () => import("@/components/Home"),
       meta: {
         keepAlive: false //true是保存缓存，false是不保存
       },
       children: [
         {
-          path: "Overall",
-          component: () => import("@/components/Overall"),
+          path: "Web",
+          component: () => import("@/components/Web"),
           meta: {
             keepAlive: false //true是保存缓存，false是不保存
           }
         },
+        {
+          path: "Stu",
+          component: () => import("@/components/Student"),
+          meta: {
+            keepAlive: false //true是保存缓存，false是不保存
+          }
+        },
+        {
+          path: "Bug",
+          component: () => import("@/components/Bugs"),
+          meta: {
+            keepAlive: false //true是保存缓存，false是不保存
+          }
+        },
+        {
+          path: "Plat",
+          component: () => import("@/components/Platform"),
+          meta: {
+            keepAlive: false //true是保存缓存，false是不保存
+          }
+        }
       ]
     },
     {

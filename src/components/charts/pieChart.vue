@@ -4,8 +4,8 @@
 </template>
 
 <script>
+import theme from '../../../static/theme/t2.js';
 let Echarts = require("echarts/lib/echarts"); //基础实例 注意不要使用import
-require("echarts/lib/chart/bar"); //按需引入 bar = 柱状图
 
 export default {
   data() {
@@ -20,7 +20,7 @@ export default {
   methods: {
     init() {
       //2.初始化
-      this.chart = Echarts.init(this.$refs.chart);
+      this.chart = Echarts.init(this.$refs.chart,theme);
       //3.配置数据
       let option = {
         tooltip: {
@@ -35,55 +35,41 @@ export default {
           },
         },
         legend: {
-          top: "bottom",
+          // top: "bottom",
+          orient: "vertical",
+          left: 20,
         },
 
         series: [
           {
             name: "人数",
-
             type: "pie",
-
             radius: ["40%", "70%"],
-
             avoidLabelOverlap: false,
-
             itemStyle: {
               borderRadius: 10,
-
-              borderColor: "#fff",
-
+              borderColor: "rgba(255,255,255,0.3)",
               borderWidth: 2,
             },
-
             label: {
               show: false,
               position: "center",
             },
-
             emphasis: {
               label: {
                 show: true,
-
                 fontSize: "40",
-
                 fontWeight: "bold",
               },
             },
-
             labelLine: {
               show: false,
             },
-
             data: [
               { value: 1048, name: "网口损坏" },
-
               { value: 735, name: "断网/连不上网" },
-
               { value: 580, name: "网速卡顿" },
-
               { value: 484, name: "一部分网站不能访问网" },
-
               { value: 300, name: "其它原因" },
             ],
           },
