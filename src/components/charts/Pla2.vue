@@ -26,7 +26,7 @@ export default {
       let option = {
         tooltip: {
           trigger: "item",
-          // formatter: '{b}内占比{d}%'
+          formatter: '{b}: {c}%'
         },
 
         series: [

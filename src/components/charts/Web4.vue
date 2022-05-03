@@ -27,7 +27,7 @@ export default {
       let option = {
         tooltip: {
           trigger: "item",
-          formatter: "{d}%{b}",
+          formatter: "{b}: {d}%",
         },
 
         // toolbox: {

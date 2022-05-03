@@ -23,8 +23,9 @@ export default {
       this.chart = Echarts.init(this.$refs.chart, theme);
       //3.配置数据
       let option = {
-        tooltip: {
+         tooltip: {
           trigger: "item",
+          formatter: "{b}: {d}%",
         },
         // toolbox: {
         //   show: true,

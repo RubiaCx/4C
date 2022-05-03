@@ -51,16 +51,16 @@ export default {
     return {
       activeIndex: "/Info/Sum",
       isCollapse: false,
-      background: {
-        // 背景图片地址
-        backgroundImage: "url(" + require("../../static/theme/bg.png") + ")",
-        // 背景图片是否重复
-        backgroundRepeat: "no-repeat",
-        // 背景图片大小
-        backgroundSize: "cover",
-        // 背景图片位置
-        backgroundPosition: "center top",
-      },
+      // background: {
+      //   // 背景图片地址
+      //   backgroundImage: "url(" + require("../../static/theme/bg.png") + ")",
+      //   // 背景图片是否重复
+      //   backgroundRepeat: "no-repeat",
+      //   // 背景图片大小
+      //   backgroundSize: "cover",
+      //   // 背景图片位置
+      //   backgroundPosition: "center top",
+      // },
     };
     
   },
@@ -86,7 +86,20 @@ export default {
   margin: 0;
   // padding-left: 5px;
   overflow: hidden;
-  /* background-color:#c03321;#88231e */
+  background-image: linear-gradient(145deg,#020818,#060c36,#191b7c,#203888,#191b7c,#060c36);
+  background-size: 400%;
+  animation: bganimation 15s infinite;
+  }
+  @keyframes bganimation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
 .page-head {
   height: 10vh;

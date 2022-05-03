@@ -26,10 +26,11 @@ export default {
         tooltip: {
           trigger: "axis",
           axisPointer: {
-            type: "cross",
-            crossStyle: {
-              color: "#999",
-            },
+            type: "shadow",
+            label:{
+              color: 'rgba(0,0,0,1)',
+              backgroundColor: 'rgba(255,255,255)',
+            }
           },
         },
         // toolbox: {

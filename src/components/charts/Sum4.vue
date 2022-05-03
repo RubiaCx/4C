@@ -23,6 +23,10 @@ export default {
       this.chart = Echarts.init(this.$refs.chart, theme);
       //3.配置数据
       let option = {
+        tooltip: {
+          trigger: "item",
+          formatter: "{b}: {c} 人",
+        },
         series: [
           {
             label: {
