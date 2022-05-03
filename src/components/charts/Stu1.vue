@@ -32,7 +32,6 @@ export default {
               backgroundColor: 'rgba(255,255,255)',
             }
           },
-
         },
         grid: {
           left: "3%",
