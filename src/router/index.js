@@ -9,7 +9,7 @@ export default new Router({
     {
       path: "/",
       // name: "Home",
-      redirect: "/Info/Web",
+      redirect: "/Info/Sum",
       base: "/vue/",
       // component: () => import("@/components/page/Home"),
       // meta: {
@@ -23,6 +23,13 @@ export default new Router({
         keepAlive: false //true是保存缓存，false是不保存
       },
       children: [
+        {
+          path: "Sum",
+          component: () => import("@/components/Summary"),
+          meta: {
+            keepAlive: false //true是保存缓存，false是不保存
+          }
+        },
         {
           path: "Web",
           component: () => import("@/components/Web"),

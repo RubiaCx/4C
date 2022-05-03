@@ -33,7 +33,7 @@ export default {
           },
         },
         legend: {
-          data: ["学生人数"],
+          data: ["网络体验不佳的人数"],
           orient: "vertical",
           left: 20,
         },
@@ -41,25 +41,24 @@ export default {
         radar: {
           // shape: 'circle',
           indicator: [
-            { name: "8：00~11：40", max: 30000 },
-            { name: "11：40~14：30", max: 30000 },
-            { name: "14：30~17：40", max: 30000 },
-            { name: "17：40~19：00", max: 30000 },
-            { name: "19：00~21：35", max: 30000 },
-            { name: "21：35~24：00", max: 30000 },
-            { name: "24：00~3：00", max: 30000 },
-            { name: "3：00~0：00", max: 30000 },
+            { name: "8：00~11：40", max: 340 },
+            { name: "11：40~14：30", max: 340 },
+            { name: "14：30~17：40", max: 340 },
+            { name: "17：40~19：00", max: 340 },
+            { name: "19：00~21：35", max: 340 },
+            { name: "21：35~1：00", max: 340 },
+            { name: "1：00~8：00", max: 340 },
           ],
         },
         series: [
           {
-            name: "学生人数",
+            name: "网络体验不佳的人数",
             type: "radar",
 
             data: [
               {
-                value: [15000, 20000, 20000, 15000, 25000, 18000, 10000, 10000],
-                name: "Allocated Budget",
+                value: [260, 129, 272, 124, 312, 189, 53, 283],
+                // name: "Allocated Budget",
                 label: {
                   show: true,
                   formatter: function (params) {
@@ -70,8 +69,7 @@ export default {
                     color: 'rgba(124, 211, 235, 1)',
                 },
                  areaStyle: {
-                    color: 'rgba(124, 211, 235, 0.2)',
-
+                    color: 'rgba(124, 211, 235, 1)',
                 }
               },
             ],

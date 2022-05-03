@@ -26,20 +26,20 @@ export default {
       let option = (option = {
         tooltip: {
           trigger: "item",
-          formatter: "{d}%{b}",
+          formatter: "{b}: {d}%",
         },
         legend: {
           orient: "vertical",
           left: 20,
         },
-        toolbox: {
-          show: true,
+        // toolbox: {
+        //   show: true,
 
-          feature: {
-            dataView: { show: true, readOnly: true },
-            restore: { show: true },
-          },
-        },
+        //   feature: {
+        //     dataView: { show: true, readOnly: true },
+        //     restore: { show: true },
+        //   },
+        // },
         series: [
           {
             avoidLabelOverlap: false,
@@ -53,8 +53,8 @@ export default {
             },
             label:{ color:"#fff" },
             data: [
-              { value: 50, name: "大部分时候上网流畅" },
-              { value: 9, name: "大部分时候上网卡顿" },
+              { value: 456, name: "大部分时候上网流畅" },
+              { value: 354, name: "大部分时候上网卡顿" },
             ],
             emphasis: {
               itemStyle: {

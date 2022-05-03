@@ -56,6 +56,11 @@ export default {
               position: "center",
             },
             emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: "rgba(0, 0, 0, 0.5)",
+              },
               label: {
                 show: true,
                 fontSize: "40",

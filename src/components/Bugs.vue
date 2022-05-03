@@ -90,7 +90,7 @@ export default {
     width: 8px;
     height: 8px;
     background: rgba(0, 0, 0, 0);
-    border: 2px solid rgba(27, 126, 242, 1);
+    border: 2px solid rgba(125, 233, 231, 1);
   }
   .border_corner_left_top {
     top: 0;
@@ -127,7 +127,7 @@ export default {
   width: 100%;
   height: 85vh;
   border-radius: 4px;
-  background-color: rgba(27, 126, 242, 0.1);
+  background-color: rgba(125, 233, 231, 0.1);
 
   .main {
     width: 100%;
@@ -140,7 +140,7 @@ export default {
     font-size: 20px;
     color: white;
     border-bottom: 1.5px solid transparent;
-    border-image: linear-gradient(to right, #001748, #1b7ef2, #001748) 1 10;
+    border-image: linear-gradient(to right, #001748, #7de9e7, #001748) 1 10;
   }
 }
 .grid-content-M1 {
@@ -149,7 +149,7 @@ export default {
   width: 100%;
   height: 40vh;
   border-radius: 4px;
-  background-color: rgba(27, 126, 242, 0.1);
+  background-color: rgba(125, 233, 231, 0.1);
 
   .main {
     width: 100%;
@@ -162,7 +162,7 @@ export default {
     line-height: 5vh;
     color: white;
     border-bottom: 1.5px solid transparent;
-    border-image: linear-gradient(to right, #001748, #1b7ef2, #001748) 1 10;
+    border-image: linear-gradient(to right, #001748, #7de9e7, #001748) 1 10;
   }
 }
 .grid-content-M2 {
@@ -172,11 +172,11 @@ export default {
   width: 100%;
   height: 40vh;
   border-radius: 4px;
-  background-color: rgba(27, 126, 242, 0.1);
+  background-color: rgba(125, 233, 231, 0.1);
 
   .main {
     width: 100%;
-    height: 40vh;
+    height: 35vh;
   }
   .title {
     width: 100%;
@@ -185,7 +185,7 @@ export default {
     line-height: 5vh;
     color: white;
     border-bottom: 1.5px solid transparent;
-    border-image: linear-gradient(to right, #001748, #1b7ef2, #001748) 1 10;
+    border-image: linear-gradient(to right, #001748, #7de9e7, #001748) 1 10;
   }
 }
 </style>

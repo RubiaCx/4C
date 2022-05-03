@@ -10,3 +10,9 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'Alibaba';
+    src: url('./fonts/ALIBABAPUHUITI-2-75-SEMIBOLD.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

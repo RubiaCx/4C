@@ -30,7 +30,6 @@ export default {
         },
         toolbox: {
           show: true,
-
           feature: {
             dataView: { show: true, readOnly: true },
             restore: { show: true },
@@ -38,7 +37,7 @@ export default {
         },
         series: [
           {
-            name: "Access From",
+            name: "故障原因",
             type: "pie",
             selectedMode: "single",
             radius: [0, "30%"],
@@ -67,43 +66,65 @@ export default {
               },
             },
             data: [
-              { value: 2, name: "宿舍网口损坏" },
-              { value: 17, name: "连不上网" },
-              { value: 24, name: "网速卡顿" },
-              { value: 3, name: "设备故障（手机、电脑、路由器）" },
-              { value: 2, name: "施工挖断网线/断网" },
-              { value: 4, name: "无法连接/不知道如何连接有线网络" },
-              { value: 0, name: "其它故障" },
-            ],
+              { value: 28, name: "宿舍网口损坏" },
+              { value: 182, name: "断网或连不上网" },
+              { value: 277, name: "信号不好" },
+              { value: 14, name: "设备故障（手机、电脑、路由器）" },
+              { value: 274, name: "网速卡顿" },
+              { value: 40, name: "频繁登录" },
+              { value: 5, name: "未被校园网覆盖" }, ],
           },
           {
-            name: "Access From",
+            name: "解决方法",
             type: "pie",
             radius: ["45%", "60%"],
             labelLine: {
               length: 30,
             },
             label: {
-              interval:0,  //让所有标签全部显示
-              // rotate:-30, //让标签旋转一定的角度  
               formatter: "{b|{b}:}\n{per|{d}%}  ",
-              backgroundColor: "#F6F8FC",
-              borderColor: "#8C8D8E",
-              borderWidth: 1,
+              color: '#000',
+              backgroundColor: "#fff",
+              borderColor: "rgba(255,255,255,0.3)",
               borderRadius: 4,
+              borderWidth: 1,
+              padding: 4,
+              interval: 0,  //让所有标签全部显示
               rich: {
                 b: {
                   color: "#4C5058",
                   fontSize: 14,
-                  fontWeight: "bold",
-                  lineHeight: 33,
+                  lineHeight:28,
                 },
                 per: {
-                  color: "#fff",
-                  backgroundColor: "#4C5058",
-                  padding: [3, 4],
-                  borderRadius: 4,
+                  color: "#000",
+                  fontWeight: "bold",
+                  fontSize: 14,
+                  lineHeight: 14,
                 },
+              } 
+              
+            },
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: "rgba(0, 0, 0, 0.5)",
+                padding: 6,
+              },
+              label: {
+                show: true,
+                padding: 8,
+                rich: {
+                  b: {
+                    fontSize: 20,
+                    lineHeight:40,
+                  },
+                  per: {
+                    fontSize: 20,
+                    lineHeight: 20,
+                  },
+              } 
               },
             },
             itemStyle: {
@@ -112,11 +133,10 @@ export default {
               borderWidth: 2,
             },
             data: [
-              { value: 16, name: "自己解决" },
-              { value: 0, name: "网上百度解决" },
-              { value: 9, name: "求助同学或社交媒体" },
-              { value: 2, name: "报修" },
-              { value: 0, name: "其它" },
+              { value: 222, name: "自己解决" },
+              { value: 55, name: "求助同学或社交媒体" },
+              { value: 38, name: "报修" },
+              { value: 39, name: "其它" },
             ],
           },
         ],

@@ -26,11 +26,19 @@ export default {
         tooltip: {
           trigger: "axis",
           axisPointer: {
-            type: "cross",
+            type: "shadow",
+            label:{
+              color: 'rgba(0,0,0,1)',
+              backgroundColor: 'rgba(255,255,255)',
+            }
           },
+
         },
         grid: {
-          right: "20%",
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true,
         },
         // toolbox: {
         //   feature: {
@@ -40,7 +48,7 @@ export default {
         //   },
         // },
         legend: {
-          data: ["综合得分", "第1位", "第2位", "第3位", "第4位"],
+          data: ["综合得分", "第1位", "第2位", "第3位"],
         },
         xAxis: [
           {
@@ -49,7 +57,7 @@ export default {
               alignWithLabel: true,
             },
             // prettier-ignore
-            data: ['无线校园网', '有线校园网', '流量', '宽带'],
+            data: ['无线校园网', '有线校园网', '非校园网'],
           },
         ],
         yAxis: [
@@ -94,31 +102,28 @@ export default {
           {
             name: "第1位",
             type: "bar",
-            data: [44, 11, 4, 8],
+            data: [573, 108, 129],
           },
           {
             name: "第2位",
             type: "bar",
             yAxisIndex: 1,
-            data: [10, 4, 22, 3],
+            data: [66, 70, 98],
           },
           {
             name: "第3位",
             type: "bar",
             yAxisIndex: 1,
-            data: [2, 4, 5, 3],
-          },
-          {
-            name: "第4位",
-            type: "bar",
-            yAxisIndex: 1,
-            data: [0, 2, 6, 5],
+            data: [15, 89, 66],
           },
           {
             name: "综合得分",
             type: "line",
             yAxisIndex: 2,
-            data: [3.13, 1.46, 0.99, 0.78],
+            data: [2.3, 0.8, 0.68],
+            color: '#f2d643',
+            emphasis: { focus: 'series' },
+            // areaStyle: {}, // 面积
           },
         ],
       };

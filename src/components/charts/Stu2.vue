@@ -26,29 +26,38 @@ export default {
       let option = {
         tooltip: {
           trigger: "item",
+          formatter: "{b}: {d}%",
         },
         legend: {
           // orient: "horizon",
           left: "center",
           // top:"center",
         },
+        
         series: [
           {
-            // name: "Access From",
+            name: "人数",
             type: "pie",
             radius: "50%",
             // startAngle = 30,
+            data: [
+              { value: 196, name: "手机" },
+              { value: 386, name: "电脑" },
+              { value: 233, name: "平板电脑" },
+              { value: 3, name: "其他" },
+            ],
             itemStyle: {
               // borderRadius: 10,
               borderColor: "rgba(255,255,255,0.3)",
               borderWidth: 2,
             },
-            label:{ color:"#fff" },
-            data: [
-              { value: 53, name: "手机" },
-              { value: 63, name: "电脑" },
-              { value: 25, name: "平板电脑" },
-            ],
+            labelLine: {
+              show: false,
+            },
+            label: {
+              show: false,
+              position: "center",
+            },
             emphasis: {
               itemStyle: {
                 shadowBlur: 10,
@@ -57,7 +66,7 @@ export default {
               },
               label: {
                 show: true,
-                fontSize: "20",
+                fontSize: "40",
                 fontWeight: "bold",
               },
             },
