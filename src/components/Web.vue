@@ -14,6 +14,7 @@
           <!-- 内容 -->
           <div class="main"><chart3></chart3></div>
         </div>
+        <el-row :gutter="25">
         <el-col :xs="24" :sm="24" :lg="12">
         <div class="grid-content-L2">
           <div class="border_corner border_corner_left_top"></div>
@@ -38,6 +39,7 @@
             <div class="main"><chart4></chart4></div>
           </div>
         </el-col>
+        </el-row>
       </div>
     </el-col>
     <el-col :xs="24" :sm="24" :lg="12">

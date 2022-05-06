@@ -53,8 +53,10 @@ export default {
             },
             label:{ color:"#fff" },
             data: [
-              { value: 456, name: "大部分时候上网流畅" },
-              { value: 354, name: "大部分时候上网卡顿" },
+              { value: 117, name: "硕士研究生" },
+              { value: 37, name: "博士研究生" },
+              { value: 187, name: "本科生" },
+
             ],
             emphasis: {
               itemStyle: {
@@ -64,7 +66,7 @@ export default {
               },
               label: {
                 show: true,
-                fontSize: "20",
+                fontSize: "15",
                 fontWeight: "bold",
               },
             },

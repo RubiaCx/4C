@@ -1,7 +1,7 @@
 <template>
   <el-row :gutter="25" class="page">
     <!-- xs sm md lg xl五个尺寸的默认值均为24 -->
-    <el-col :xs="24" :sm="24" :lg="14">
+    <el-col :xs="24" :sm="24" :lg="16">
       <div class="grid-content">
         <div class="grid-content-L1">
           <!-- 四个角的边框效果 -->
@@ -10,13 +10,40 @@
           <div class="border_corner border_corner_left_bottom"></div>
           <div class="border_corner border_corner_right_bottom"></div>
           <!-- 标题 -->
-          <div class="title">网络故障原因及解决措施</div>
+          <div class="title">网络故障情况</div>
           <!-- 内容 -->
-          <div class="main"><chart1></chart1></div>
+          <div class="main"><chart5></chart5></div>
         </div>
+        <el-row :gutter="25">
+        <el-col :xs="24" :sm="24" :lg="12">
+          <div class="grid-content-L2">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <!-- 标题 -->
+            <div class="title">报故障的人员情况</div>
+            <!-- 内容 -->
+            <div class="main"><chart4></chart4></div>
+          </div>
+        </el-col>
+        <el-col :xs="24" :sm="24" :lg="12">
+          <div class="grid-content-L3">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <!-- 标题 -->
+            <div class="title">故障解决路径</div>
+            <!-- 内容 -->
+            <div class="main"><chart1></chart1></div>
+          </div>
+        </el-col>
+        </el-row>
       </div>
+
     </el-col>
-    <el-col :xs="24" :sm="24" :lg="10">
+    <el-col :xs="24" :sm="24" :lg="8">
       <div class="grid-content">
         <div class="grid-content-M1">
           <div class="border_corner border_corner_left_top"></div>
@@ -48,6 +75,8 @@ import Test from "./test.vue";
 const chart1 = () => import("./charts/Bugs1");
 const chart2 = () => import("./charts/Bugs2");
 const chart3 = () => import("./charts/Bugs3");
+const chart4 = () => import("./charts/Bugs4");
+const chart5 = () => import("./charts/Bugs5");
 export default {
   data() {
     return {};
@@ -57,6 +86,8 @@ export default {
     chart1,
     chart2,
     chart3,
+    chart4,
+    chart5,
   },
 };
 </script>
@@ -125,17 +156,66 @@ export default {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 85vh;
+  height: 40vh;
   border-radius: 4px;
   background-color: rgba(125, 233, 231, 0.1);
 
   .main {
     width: 100%;
-    height: 80vh;
+    height: 35vh;
   }
   .title {
     width: 100%;
     height: 5vh;
+    font-size: 20px;
+    line-height: 5vh;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1.5px solid transparent;
+    border-image: linear-gradient(to right, #001748, #7de9e7, #001748) 1 10;
+  }
+}
+.grid-content-L2 {
+  margin-top: 5vh;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 40vh;
+  border-radius: 4px;
+  background-color: rgba(125, 233, 231, 0.1);
+
+  .main {
+    width: 100%;
+    height: 35vh;
+  }
+  .title {
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    line-height: 5vh;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1.5px solid transparent;
+    border-image: linear-gradient(to right, #001748, #7de9e7, #001748) 1 10;
+  }
+}
+.grid-content-L3 {
+  margin-top: 5vh;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 40vh;
+  border-radius: 4px;
+  background-color: rgba(125, 233, 231, 0.1);
+
+  .main {
+    width: 100%;
+    height: 35vh;
+  }
+  .title {
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
     line-height: 5vh;
     font-size: 20px;
     color: white;
